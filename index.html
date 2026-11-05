@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f3ef">
+  <meta name="description" content="Nayela Boutique: prendas y accesorios para sentirte tú.">
+  <title>Nayela Boutique | Viste a tu manera</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Envíos gratis en compras superiores a $200.000 · Hecho para ti</div>
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegación principal">
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+      <div class="nav-links" id="navLinks"><a href="#coleccion">Colección</a><a href="#nosotras">Nuestra historia</a><a href="#contacto">Contacto</a></div>
+      <a class="brand" href="#inicio">NAYELA<small>B O U T I Q U E</small></a>
+      <div class="nav-tools"><a class="nav-action" href="#coleccion">Tienda</a><button class="nav-action" id="cartButton" aria-label="Ver carrito">Bolsa <span class="cart-count" id="cartCount">0</span></button></div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="inicio" aria-label="Novedades de Nayela Boutique">
+      <article class="hero-slide active" style="--hero-image:url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=2000&q=85')" aria-hidden="false">
+        <div class="hero-copy"><span class="eyebrow">Nueva temporada · 2026</span><h1>Vístete<br>a tu manera.</h1><p>Prendas escogidas con cariño para acompañarte en cada versión de ti.</p><a class="button" href="#coleccion">Descubrir colección</a></div>
+      </article>
+      <article class="hero-slide" style="--hero-image:url('https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=2000&q=85')" aria-hidden="true">
+        <div class="hero-copy"><span class="eyebrow">Piezas para cada momento</span><h1>Tu estilo,<br>tu historia.</h1><p>Encuentra prendas que te hagan sentir cómoda, segura y auténtica.</p><a class="button" href="#coleccion">Explorar prendas</a></div>
+      </article>
+      <article class="hero-slide" style="--hero-image:url('https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=2000&q=85')" aria-hidden="true">
+        <div class="hero-copy"><span class="eyebrow">Detalles que hablan de ti</span><h1>Un toque<br>especial.</h1><p>Descubre accesorios y favoritos escogidos con cariño para ti.</p><a class="button" href="#coleccion">Ver favoritos</a></div>
+      </article>
+      <button class="hero-arrow hero-prev" type="button" aria-label="Diapositiva anterior">‹</button>
+      <button class="hero-arrow hero-next" type="button" aria-label="Siguiente diapositiva">›</button>
+      <div class="hero-dots" role="group" aria-label="Elegir diapositiva"></div>
+    </section>
+    <section class="section" id="coleccion"><div class="section-heading"><span class="eyebrow">Piezas que enamoran</span><h2>Favoritos de temporada</h2><p>Encuentra ese algo especial que estabas buscando.</p></div>
+      <div class="filters" role="group" aria-label="Filtrar productos"><button class="filter active" data-filter="todos">Todo</button><button class="filter" data-filter="ropa">Ropa</button><button class="filter" data-filter="accesorios">Accesorios</button></div>
+      <div class="products" id="products"></div>
+    </section>
+    <section class="story" id="nosotras"><div class="story-inner"><img class="story-image" src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=1000&q=85" alt="Estilo y moda en Nayela Boutique" loading="lazy"><div class="story-copy"><span class="eyebrow">Conoce Nayela</span><h2>La moda también es sentirte en casa.</h2><p>Somos una boutique creada para celebrar tu estilo, tus planes y todo lo que te hace única. Elegimos cada prenda pensando en que te acompañe con comodidad, confianza y un toque especial.</p><p>Gracias por elegir apoyar un sueño local y hacerlo parte del tuyo.</p><a class="button" href="#coleccion">Ver la colección</a></div></div></section>
+    <section class="newsletter" id="contacto"><span class="eyebrow">Una nota bonita en tu correo</span><h2>Quédate cerquita</h2><p>Novedades, inspiración y sorpresas de Nayela Boutique.</p><form class="subscribe-form" id="subscribeForm"><input type="email" placeholder="Tu correo electrónico" aria-label="Tu correo electrónico" required><button type="submit">Suscribirme</button></form></section>
+  </main>
+  <footer class="footer"><div class="footer-brand">NAYELA</div><p>B O U T I Q U E<br>Viste a tu manera.<br><br>© <span id="year"></span> Nayela Boutique · Hecho con cariño</p></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js" defer></script>
+</body>
+</html>
+
+
